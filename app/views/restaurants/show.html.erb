@@ -15,5 +15,8 @@
 </ul>
 <br>
 
+<%= render "form_review", restaurant: @restaurant,  review: @review%>
+
+
 <%= link_to 'Back to all restaurants', restaurants_path %>
-<%= link_to 'Create a new review', new_restaurant_review_path(@restaurant) %>
+<%# <%= link_to 'Create a new review', new_restaurant_review_path(@restaurant) %>
