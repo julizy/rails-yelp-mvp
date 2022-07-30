@@ -15,6 +15,8 @@ pizza_east =  {name: "Pizza East", address: "56A Shoreditch High St, London E1 6
 
 [dishoom, pizza_east].each do |attributes|
   restaurant = Restaurant.create!(attributes)
+  Review.create!(content:'good food', rating: 4, restaurant_id: restaurant[:id])
   puts "Created #{restaurant.name}"
 end
+
 puts "Finished!"
